@@ -16,6 +16,7 @@ const Card = ({data}) => {
         e.target.parentNode.nextSibling.style.display = "none"
 
 
+        
       }
   
   return (
