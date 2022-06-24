@@ -4,23 +4,17 @@ import './Card.css'
 
 const Card = ({data}) => {
   
-    const handleMouseHover = e =>{
+  const handleMouseHover = e =>{
         e.target.style.filter = "grayscale(100%)"
         e.target.parentNode.nextSibling.style.display = "inline"
-  
-        e.target.parentNode.nextSibling.style.transition="transform 2s ease-in-out"
-
+          e.target.parentNode.nextSibling.style.transition="transform 2s ease-in-out"
       }
       const handleMouseNoHover = e =>{
         e.target.style.filter = "grayscale(0%)"
         e.target.parentNode.nextSibling.style.display = "none"
-
-
-        
-      }
-  
-  return (
-    <div className='container'  style={{ backgroundColor: 'black' }}>
+              }
+    return (
+    <div className='container'  style={{ backgroundColor: 'rgb(65, 192, 228)' }}>
     {data.map((item) => {
         const {id, title, desc,image} = item;
 
@@ -36,10 +30,6 @@ const Card = ({data}) => {
                <div className='showtext' >
                 {desc}
                </div>
-
-          
-                {/* <p>{id}</p> */}
-                {/* <h2>{desc}</h2>    */}
                 
             </div>
   )
